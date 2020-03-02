@@ -6,6 +6,8 @@
 import tensorflow.compat.v1 as tf
 import pickle
 
+tf.disable_v2_behavior()
+
 
 class OutputUnit(object):
     def __init__(self, input_size, output_size, scope_name):

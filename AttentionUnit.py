@@ -6,6 +6,8 @@
 import tensorflow.compat.v1 as tf
 import pickle
 
+tf.disable_v2_behavior()
+
 
 class AttentionWrapper(object):
     def __init__(self, hidden_size, input_size, hs, scope_name):

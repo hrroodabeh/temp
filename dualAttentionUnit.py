@@ -6,6 +6,7 @@
 import tensorflow.compat.v1 as tf
 import pickle
 
+tf.disable_v2_behavior()
 
 class dualAttentionWrapper(object):
     def __init__(self, hidden_size, input_size, field_size, hs, fds, scope_name):
